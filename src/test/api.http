@@ -1,0 +1,36 @@
+### Get all patients
+GET http://localhost:1234/patients
+
+### Get a patient by id
+GET http://localhost:1234/patients/c34d5600-6513-11ee-80ac-a8b13bacb512
+
+### Recuperar todas las películas por un género
+GET http://localhost:1234/movies?genre=ACTION
+
+### Crear una película con POST
+POST http://localhost:1234/patients
+Content-Type: application/json
+
+{
+  "name": "Belen",
+  "surname": "Colmenero Rubio",
+  "dni": "12342322B",
+  "address": "C/Los cantos",
+  "city": "Alcorcon",
+  "province": "Madrid",
+  "phone": "637219388",
+  "email": "belcolru@pegmail.com",
+  "tutor": "",
+  "comments": ""
+}
+
+### Borrar una película
+DELETE http://localhost:1234/movies/64d4d8825d614a4ec5984ae3
+
+### Actualizar una película
+PATCH http://localhost:1234/movies/64d4da882f83563ab4f40632
+Content-Type: application/json
+
+{
+  "year": 2022
+}

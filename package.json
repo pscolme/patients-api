@@ -1,0 +1,20 @@
+{
+  "name": "patients-api",
+  "version": "1.0.0",
+  "description": "API for patients and citations",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch ./src/launch/server-with-mysql.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pablo Sanchez",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.1",
+    "zod": "^3.22.4"
+  }
+}
